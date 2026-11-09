@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Obchod — Monogram</title>
+  <meta name="description" content="Objednejte si CD kapely Monogram – Simple Man, Take It Easy, Hit The Road a Siesta. Zasíláme na dobírku.">
+  <meta name="theme-color" content="#0e0d0b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Monogram">
+  <meta property="og:title" content="Obchod — Monogram">
+  <meta property="og:description" content="Objednejte si CD kapely Monogram – Simple Man, Take It Easy, Hit The Road a Siesta. Zasíláme na dobírku.">
+  <meta property="og:image" content="https://monogram.cz/assets/img/foto/monogram_four.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..800;1,400..800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Monogram – úvod">
+        <!-- LOGO: až dorazí, nahraďte dva řádky níže za <img src="assets/img/logo.svg" alt="Monogram"> -->
+        <span class="brand-name">Monogram</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otevřít menu"><span></span><span></span></button>
+      <nav class="nav" id="menu" aria-label="Hlavní menu" data-lenis-prevent>
+          <a href="index.html">Úvod</a>
+          <a href="vystoupeni.html">Vystoupení</a>
+          <a href="o-kapele.html">O kapele</a>
+          <a href="hudba.html">Hudba</a>
+          <a href="video.html">Video</a>
+          <a href="fotogalerie.html">Fotogalerie</a>
+          <a href="obchod.html" aria-current="page">Obchod</a>
+          <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+
+    <header class="page-hero">
+      <img class="page-hero-img" src="assets/img/foto/monogram-1.jpg" alt="" style="object-position:50% 25%" fetchpriority="high">
+      <div class="wrap page-hero-inner">
+        <h1 class="page-title">Obchod</h1>
+        <p class="page-lede">Vyberte desky, vyplňte adresu a my vám je pošleme poštou na dobírku. K objednávce připočítáváme 80 Kč za dobírku.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <form class="wrap shop" data-order-form data-mail="jahod250@gmail.com" data-endpoint="" novalidate>
+        <div>
+          <ul class="products">
+            <li class="product" data-name="Simple Man (2019)" data-price="250">
+              <img src="assets/img/alba/obal_monogram_simple-man.jpg" alt="" loading="lazy">
+              <div><h3>Simple Man</h3><p class="product-meta">2019 · 250 Kč</p></div>
+              <div class="qty">
+                <button type="button" data-dec aria-label="Odebrat Simple Man">−</button>
+                <input type="number" inputmode="numeric" min="0" max="20" value="0" name="ks-simple-man" aria-label="Počet kusů Simple Man">
+                <button type="button" data-inc aria-label="Přidat Simple Man">+</button>
+              </div>
+            </li>
+            <li class="product" data-name="Take It Easy (2015)" data-price="200">
+              <img src="assets/img/alba/take-it-easy.jpg" alt="" loading="lazy">
+              <div><h3>Take It Easy</h3><p class="product-meta">2015 · 200 Kč</p></div>
+              <div class="qty">
+                <button type="button" data-dec aria-label="Odebrat Take It Easy">−</button>
+                <input type="number" inputmode="numeric" min="0" max="20" value="0" name="ks-take-it-easy" aria-label="Počet kusů Take It Easy">
+                <button type="button" data-inc aria-label="Přidat Take It Easy">+</button>
+              </div>
+            </li>
+            <li class="product" data-name="Hit The Road (2010)" data-price="200">
+              <img src="assets/img/alba/hit.jpg" alt="" loading="lazy">
+              <div><h3>Hit The Road</h3><p class="product-meta">2010 · 200 Kč</p></div>
+              <div class="qty">
+                <button type="button" data-dec aria-label="Odebrat Hit The Road">−</button>
+                <input type="number" inputmode="numeric" min="0" max="20" value="0" name="ks-hit-the-road" aria-label="Počet kusů Hit The Road">
+                <button type="button" data-inc aria-label="Přidat Hit The Road">+</button>
+              </div>
+            </li>
+            <li class="product" data-name="Siesta (2000)" data-price="200">
+              <img src="assets/img/alba/siesta.jpg" alt="" loading="lazy">
+              <div><h3>Siesta</h3><p class="product-meta">2000 · 200 Kč</p></div>
+              <div class="qty">
+                <button type="button" data-dec aria-label="Odebrat Siesta">−</button>
+                <input type="number" inputmode="numeric" min="0" max="20" value="0" name="ks-siesta" aria-label="Počet kusů Siesta">
+                <button type="button" data-inc aria-label="Přidat Siesta">+</button>
+              </div>
+            </li>
+          </ul>
+          <div class="order-summary" aria-live="polite">
+            <div><span>Zboží</span><span data-sum>0 Kč</span></div>
+            <div><span>Dobírka</span><span data-cod>—</span></div>
+            <div class="total"><span>Celkem</span><span data-total>0 Kč</span></div>
+          </div>
+        </div>
+
+        <div class="form">
+          <h2>Doručovací údaje</h2>
+          <div class="field"><label for="f-jmeno">Jméno <i>*</i></label><input id="f-jmeno" name="jmeno" autocomplete="given-name" required></div>
+          <div class="field"><label for="f-prijmeni">Příjmení <i>*</i></label><input id="f-prijmeni" name="prijmeni" autocomplete="family-name" required></div>
+          <div class="field field--full"><label for="f-ulice">Ulice a číslo <i>*</i></label><input id="f-ulice" name="ulice" autocomplete="street-address" required></div>
+          <div class="field"><label for="f-mesto">Město <i>*</i></label><input id="f-mesto" name="mesto" autocomplete="address-level2" required></div>
+          <div class="field"><label for="f-psc">PSČ <i>*</i></label><input id="f-psc" name="psc" inputmode="numeric" autocomplete="postal-code" required></div>
+          <div class="field"><label for="f-email">E-mail <i>*</i></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-tel">Telefon</label><input id="f-tel" name="telefon" type="tel" autocomplete="tel"></div>
+          <div class="field field--full"><label for="f-zprava">Zpráva pro nás</label><textarea id="f-zprava" name="zprava" rows="3"></textarea></div>
+          <div class="hp" aria-hidden="true"><label>Nevyplňujte <input name="web" tabindex="-1" autocomplete="off"></label></div>
+          <button class="btn" type="submit">Odeslat objednávku</button>
+          <p class="form-status" role="status"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-word">Monogram<span>Bluegrass z Prahy</span></div>
+        <div class="footer-col">
+          <h4>Web</h4>
+          <ul>
+            <li><a href="vystoupeni.html">Vystoupení</a></li>
+            <li><a href="o-kapele.html">O kapele</a></li>
+            <li><a href="hudba.html">Hudba</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="fotogalerie.html">Fotogalerie</a></li>
+            <li><a href="obchod.html">Obchod</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:jahod250@gmail.com">jahod250@gmail.com</a></li>
+            <li><a href="tel:+420603201392">+420 603 201 392</a></li>
+            <li><a href="https://www.facebook.com/monogramband" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="kontakt.html#pro-poradatele">Pro pořadatele</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> Monogram</span>
+        <span>Praha, Česká republika</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
